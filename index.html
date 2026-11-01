@@ -63,14 +63,24 @@ input,select,textarea{width:100%;padding:12px;border-radius:8px;border:1px solid
 .promo{width:100%;height:auto;border-radius:14px;border:1px solid var(--line);background:#000}
 @media (max-width:640px){nav a{margin:0 12px 0 0}.hero{padding:48px 0 36px}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.nav{background:#0b1220}.nav nav a:not(.btn){color:#9fb0c8}.nav nav a:not(.btn):hover,.nav nav a[aria-current]{color:#e8eef8}.nav .brand{color:#e8eef8}.nav .logo small{color:#9fb0c8}.nav .logo b{color:#38bdf8}.nav .btn-primary{background:#38bdf8;border-color:#38bdf8;color:#04111f}
+.foot{background:#080e1a;color:#9fb0c8}.foot strong{color:#e8eef8}.foot a{color:#9fb0c8}
+body.light{--bg:#f7f9fc;--fg:#0b1a33;--mut:#51607a;--acc:#0b5cab;--card:#ffffff;--line:#d9e2ef}
+body.light .alt{background:#eef3fa}body.light .band{background:#0b2a55;color:#fff}body.light .band .btn-ghost{color:#fff;border-color:#fff}body.light .band .btn-primary{background:#fff;color:#0b2a55;border-color:#fff}
+body.light main .btn-primary{color:#fff}body.light input,body.light select,body.light textarea{background:#fff;color:#0b1a33}
+body.light .tag{background:#dbeafe;color:#0b5cab}body.light .tag.pop{background:#0b5cab;color:#fff}body.light .ticks li:before{color:#15803d}body.light .note{background:#fff}
+body.light main h1 em,body.light main .kicker{color:#0b5cab}
+.tiles li a{display:block;color:inherit;text-decoration:none;padding:0}.tiles li a:hover{color:var(--acc)}.tiles li:hover{background:#16335a}
+.explore{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin:8px 0 0}.explore a{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;text-decoration:none;color:var(--fg);font-weight:700}.explore a small{display:block;font-weight:400;color:var(--mut)}.explore a:hover{border-color:var(--acc)}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "CRTCai", "legalName": "CRTC LLC", "areaServed": ["Mount Pleasant, SC", "Charleston, SC"], "address": {"@type": "PostalAddress", "addressLocality": "Mount Pleasant", "addressRegion": "SC", "addressCountry": "US"}, "priceRange": "$79-$3,000", "url": "https://crtcai.com", "email": "chale@cooperrivertrading.com", "telephone": "+18437548988", "description": "Cognitive Robotics & Technology Company. Websites, business automation and software products."}</script>
 </head>
-<body>
+<body class="dark">
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav"><div class="wrap nav-in">
 <a class="brand" href="/"><span class="logo"><span class="wm">CRTC<b>ai</b></span><small>Build &middot; Automate &middot; Grow</small></span></a>
-<nav aria-label="Main"><a href="/" aria-current="page">Home</a><a href="/services/">Services</a><a href="/products/">Products</a><a href="/pricing/">Pricing</a><a href="/about/">About</a><a href="/contact/">Contact</a><a class="btn btn-primary navbtn" href="mailto:chale@cooperrivertrading.com?subject=Get%20started">Get Started</a></nav>
+<nav aria-label="Main"><a href="/" aria-current="page">Home</a><a href="/services/">Services</a><a href="/how-it-works/">How it works</a><a href="/samples/">Samples</a><a href="/pricing/">Pricing</a><a href="/about/">About</a><a href="/contact/">Contact</a><a class="btn btn-primary navbtn" href="mailto:chale@cooperrivertrading.com?subject=Get%20started">Get Started</a></nav>
 </div></header>
 <main id="main">
 <section class="hero"><div class="wrap herogrid">
@@ -84,60 +94,31 @@ input,select,textarea{width:100%;padding:12px;border-radius:8px;border:1px solid
 <p class="badge">Powered by <strong>CRTC OS</strong><br><small>AI Operating System</small></p></div>
 </div></section>
 <section class="section tight"><div class="wrap"><ul class="tiles" role="list">
-<li><span aria-hidden="true">&#127760;</span>Professional Websites</li>
-<li><span aria-hidden="true">&#9881;</span>AI Automation Solutions</li>
-<li><span aria-hidden="true">&#128230;</span>Business Tools &amp; Software</li>
-<li><span aria-hidden="true">&#9889;</span>Fast Turnaround</li>
-<li><span aria-hidden="true">&#127911;</span>Expert Support</li>
+<li><a href="/services/"><span aria-hidden="true">&#127760;</span>Professional Websites</a></li>
+<li><a href="/ai/"><span aria-hidden="true">&#9881;</span>AI Automation Solutions</a></li>
+<li><a href="/products/"><span aria-hidden="true">&#128230;</span>Business Tools &amp; Software</a></li>
+<li><a href="/how-it-works/"><span aria-hidden="true">&#9889;</span>Fast Turnaround</a></li>
+<li><a href="/contact/"><span aria-hidden="true">&#127911;</span>Expert Support</a></li>
 </ul></div></section>
 <section class="section"><div class="wrap">
 <h2 class="rule"><span>Our Services &amp; Pricing</span></h2>
 <div class="cards"><article class="card" id="fast-launch"><h3>Fast Launch</h3><p class="price">$299</p><p>Modern, fast, mobile-friendly websites that turn visitors into customers.</p><ul class="ticks"><li>Mobile-Friendly Design</li><li>Contact &amp; Quote Forms</li><li>SEO Basics</li></ul><p><a class="btn btn-ghost" href="/pricing/#fast-launch">Get Started</a></p></article><article class="card feature" id="ecommerce-systems"><p class="tag pop">Most Popular</p><h3>E-Commerce &amp; Systems</h3><p class="price">$499</p><p>Modern, fast, mobile-friendly websites that turn visitors into customers.</p><p class="sub">Scope confirmed in writing before you pay.</p><p><a class="btn btn-primary" href="/pricing/#ecommerce-systems">Get Started</a></p></article><article class="card" id="ai-workflow"><h3>AI Workflow Automation</h3><p class="price">$3,000<span> flat + $79/mo care</span></p><p>Connected workflows, useful AI agents, and practical business automation.</p><p><a class="btn btn-ghost" href="/pricing/#ai-workflow">Get Started</a></p></article></div>
 <ul class="trio" role="list"><li><span aria-hidden="true">&#128640;</span><strong>Launch in 48 Hours</strong></li><li><span aria-hidden="true">&#128737;</span><strong>Secure &amp; Reliable</strong><small>Cloudflare</small></li><li><span aria-hidden="true">&#129309;</span><strong>Local Support</strong><small>Charleston, SC</small></li></ul>
-<h3 class="morehead">More ways we help</h3>
-<div class="cards"><article class="card" id="care-plan"><h3>Care Plan</h3><p class="price">$79<span>/mo</span></p><p>Ongoing support and upkeep for your website and systems.</p><p><a class="btn btn-ghost" href="/pricing/#care-plan">Get Started</a></p></article><article class="card" id="brain-pack"><h3>Brain Pack</h3><p class="price">$149</p><p>Knowledge bundle for your business systems.</p><p><a class="btn btn-ghost" href="/pricing/#brain-pack">Get Started</a></p></article><article class="card" id="sentinel"><h3>Sentinel Protection</h3><p class="price">$99<span> + $79/mo care</span></p><p>Protection service for your systems.</p><p><a class="btn btn-ghost" href="/pricing/#sentinel">Get Started</a></p></article><article class="card" id="creative-studio"><h3>Creative Studio &amp; English-to-Code</h3><p class="price">Price on request</p><p>Brand identity, professional graphics, and plain-language ideas turned into structured, testable software projects.</p><p><a class="btn btn-ghost" href="mailto:chale@cooperrivertrading.com?subject=Creative%20Studio%20quote">Request a Quote</a></p></article></div>
-<p><a class="btn btn-ghost" href="/pricing/">See all prices</a></p>
+<p><a class="btn btn-primary" href="/pricing/">See all prices</a> <a class="btn btn-ghost" href="/services/">All services</a></p>
 </div></section>
-<section class="section alt" id="samples"><div class="wrap">
-<p class="kicker">See it first</p><h2>More calls and bookings, not just a website</h2>
-<p class="lead">Every project starts with a free preview made for your business. Here are three sample sites we built the same way.</p>
-<div class="cards">
-<article class="card"><h3>Auto garage</h3><p>Services, hours, tap-to-call and a quote request.</p><p><a href="/samples/auto-garage/">View sample: auto garage</a></p></article>
-<article class="card"><h3>Hair studio</h3><p>Services, stylists and an easy booking request.</p><p><a href="/samples/hair-studio/">View sample: hair studio</a></p></article>
-<article class="card"><h3>Plumbing company</h3><p>Emergency call button, service area and quote form.</p><p><a href="/samples/plumbing-co/">View sample: plumbing company</a></p></article>
-</div>
-<p class="fine">Sample businesses are fictional. Your preview uses your real name, services and photos.</p>
-</div></section>
-<section class="section"><div class="wrap">
-<p class="kicker">Watch</p><h2>CRTCai in 27 seconds</h2>
-<video class="promo" controls preload="none" playsinline poster="/media/poster.jpg" width="1280" height="720" aria-label="CRTCai promo video, 27 seconds, no sound: what we do, our packages and how to reach us"><source src="/media/crtcai-promo.mp4" type="video/mp4">Your browser cannot play this video. <a href="/media/crtcai-promo.mp4">Download the promo video</a>.</video>
-</div></section>
-<section class="section alt"><div class="wrap">
-<p class="kicker">How it works</p><h2>You talk. It builds.</h2>
-<p class="lead">Plain English in, working software out. Five steps, one word each.</p>
-<ol class="steps five">
-<li><h3>Listen</h3><p>Tell us what you need, in plain English.</p></li>
-<li><h3>Plan</h3><p>We turn it into a clear, priced plan.</p></li>
-<li><h3>Build</h3><p>We make it. You see a free preview first.</p></li>
-<li><h3>Check</h3><p>A second set of eyes tests it before you see it.</p></li>
-<li><h3>Care</h3><p>We keep it running. You own it from day one.</p></li>
-</ol></div></section>
-<section class="section"><div class="wrap">
-<p class="kicker">Why CRTCai</p><h2>Plain language, fair prices, no lock-in</h2>
-<ul class="grid" role="list">
-<li><h3>Posted prices</h3><p>The price is on the <a href="/pricing/">pricing page</a>. No surprise add-ons.</p></li>
-<li><h3>You own it</h3><p>Your domain, your files, your content. Leave any time.</p></li>
-
-
-<li><h3>A real person answers</h3><p>Call or text 843-754-8988. No ticket queue.</p></li>
-
-</ul></div></section>
+<section class="section alt"><div class="wrap"><p class="kicker">Explore</p><h2>Where to next?</h2>
+<div class="explore">
+<a href="/how-it-works/">How it works<small>Five simple steps. You talk, it builds.</small></a>
+<a href="/samples/">See sample sites<small>Three examples built the same way.</small></a>
+<a href="/watch/">Watch the video<small>CRTCai in 27 seconds.</small></a>
+<a href="/about/">About CRTCai<small>Who we are and how we work.</small></a>
+</div></div></section>
 <section class="band"><div class="wrap"><h2>Ready to see yours?</h2><p>Send your business name and what you do. We reply with a free preview plan.</p><p><a class="btn btn-primary" href="mailto:chale@cooperrivertrading.com?subject=Free%20website%20preview">Get my free preview</a> <a class="btn btn-ghost" href="tel:+18437548988">Call or text 843-754-8988</a></p></div></section>
 </main>
 <footer class="foot"><div class="wrap">
 <div class="cols">
 <div><strong>CRTCai</strong><p>Don't search harder. Let CRTC find what everyone else missed.<br>Powered by CRTC OS. A Cooper River Trading Co. business. Charleston, SC.</p></div>
-<div><strong>Company</strong><p><a href="/about/">About</a><br><a href="/services/">Services</a><br><a href="/pricing/">Pricing</a><br><a href="/contact/">Contact</a></p></div>
+<div><strong>Company</strong><p><a href="/about/">About</a><br><a href="/services/">Services</a><br><a href="/products/">Products</a><br><a href="/how-it-works/">How it works</a><br><a href="/samples/">Samples</a><br><a href="/watch/">Watch</a><br><a href="/pricing/">Pricing</a><br><a href="/contact/">Contact</a></p></div>
 <div><strong>Reach us</strong><p><a href="mailto:chale@cooperrivertrading.com">chale@cooperrivertrading.com</a><br><a href="tel:+18437548988">843-754-8988</a></p></div>
 <div><strong>Legal</strong><p><a href="/privacy/">Privacy</a><br><a href="/terms/">Terms</a></p></div>
 </div>
