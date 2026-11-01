@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Bodoni Moda';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/samples/hair-studio/fonts/f0.woff2) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/samples/hair-studio/fonts/f1.woff2) format('truetype');
+}

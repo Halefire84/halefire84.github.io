@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/samples/auto-garage/fonts/f0.woff2) format('truetype');
+}
+@font-face {
+  font-family: 'Saira Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/samples/auto-garage/fonts/f1.woff2) format('truetype');
+}
