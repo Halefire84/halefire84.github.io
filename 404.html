@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Page not found | CRTCai</title>
 <meta name="description" content="That page does not exist.">
-<meta name="theme-color" content="#0b1220">
+<meta name="theme-color" content="#10244a">
 <meta property="og:title" content="Page not found | CRTCai">
 <meta property="og:description" content="That page does not exist.">
 <meta property="og:type" content="website">
@@ -46,7 +46,7 @@ input,select,textarea{width:100%;padding:12px;border-radius:8px;border:1px solid
 .prose{max-width:760px}.prose h2{margin-top:28px;font-size:1.25rem}
 .foot{border-top:1px solid var(--line);padding:36px 0;background:#080e1a;color:var(--mut)}
 .cols{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}.foot strong{color:var(--fg)}.foot a{color:var(--mut)}.fine{font-size:.85rem;margin-top:24px}
-.logo{display:flex;flex-direction:column;line-height:1;font-size:1.6rem;font-weight:800;letter-spacing:.02em}.logo b{color:var(--acc)}.wm{display:block}.logo small{font-size:.62rem;font-weight:400;color:var(--mut);letter-spacing:.06em;margin-top:3px}
+.logo{display:flex;flex-direction:column;line-height:1;font-size:1.6rem;font-weight:800;letter-spacing:.02em}.logo b{color:var(--acc)}.mono{display:block;flex:none}.wm{display:block}.logo small{font-size:.62rem;font-weight:400;color:var(--mut);letter-spacing:.06em;margin-top:3px}
 .navbtn{margin:0 0 0 16px;padding:8px 16px;color:#04111f}
 .herogrid{display:grid;gap:24px;grid-template-columns:1.3fr 1fr;align-items:center}h1 em{color:var(--acc);font-style:normal}
 .lead2{font-size:1.3rem;font-weight:700;margin:0 0 8px}
@@ -71,16 +71,39 @@ body.light .alt{background:#eef3fa}body.light .band{background:#0b2a55;color:#ff
 body.light main .btn-primary{color:#fff}body.light input,body.light select,body.light textarea{background:#fff;color:#0b1a33}
 body.light .tag{background:#dbeafe;color:#0b5cab}body.light .tag.pop{background:#0b5cab;color:#fff}body.light .ticks li:before{color:#15803d}body.light .note{background:#fff}
 body.light main h1 em,body.light main .kicker{color:#0b5cab}
+body.dark .card,body.dark .grid li,body.dark .steps li,body.dark .tiles li,body.dark .explore a{background:linear-gradient(160deg,#18263f 0%,#101a2e 60%,#0d1627 100%);box-shadow:0 12px 30px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.07)}
+body.dark .card.feature{background:linear-gradient(160deg,#1a3a63 0%,#112544 60%,#0d1a33 100%);box-shadow:0 16px 40px rgba(14,165,233,.28),0 0 0 1px #38bdf8,inset 0 1px 0 rgba(255,255,255,.12)}
+body.dark .btn-primary{background:linear-gradient(180deg,#5cc8fb,#2aa8ec);box-shadow:0 6px 18px rgba(56,189,248,.35),inset 0 1px 0 rgba(255,255,255,.35)}
+body.dark .card,body.dark .tiles li,body.dark .explore a,body.dark .btn{transition:transform .18s ease,box-shadow .18s ease}
+body.dark .card:hover,body.dark .tiles li:hover,body.dark .explore a:hover{transform:translateY(-3px)}
+@media (prefers-reduced-motion:reduce){body.dark .card,body.dark .tiles li,body.dark .explore a,body.dark .btn{transition:none}body.dark .card:hover,body.dark .tiles li:hover,body.dark .explore a:hover{transform:none}}
+.hero{background:radial-gradient(900px 420px at 78% -8%,#1b4a86,transparent),radial-gradient(600px 300px at 5% 0%,#0f2a52,transparent)}
 .tiles li a{display:block;color:inherit;text-decoration:none;padding:0}.tiles li a:hover{color:var(--acc)}.tiles li:hover{background:#16335a}
 .form fieldset{border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:0 0 10px}.form legend{font-weight:700;padding:0 6px}.form label.opt{display:flex;gap:10px;align-items:center;font-weight:400;margin-top:6px;cursor:pointer}.form input[type=radio]{width:auto;margin:0;flex:none;accent-color:#38bdf8}
 .explore{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin:8px 0 0}.explore a{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;text-decoration:none;color:var(--fg);font-weight:700}.explore a small{display:block;font-weight:400;color:var(--mut)}.explore a:hover{border-color:var(--acc)}
+
+body::before{content:"";position:fixed;top:0;left:0;right:0;height:4px;z-index:30;background:linear-gradient(90deg,#64748b,#e2e8f0,#9fb0c8,#38bdf8);box-shadow:0 1px 8px rgba(148,163,184,.35)}
+.nav{border-bottom:1px solid #9fb0c8;box-shadow:0 6px 18px rgba(0,0,0,.35)}.foot{border-top:1px solid #9fb0c8;box-shadow:inset 0 8px 18px rgba(0,0,0,.35)}
+body.dark .card,body.dark .tiles li,body.dark .explore a{border-color:#2a3a57}body.dark .card:hover,body.dark .tiles li:hover,body.dark .explore a:hover{border-color:#9fb0c8}
+body.dark .card.feature{box-shadow:0 16px 40px rgba(245,196,81,.22),0 0 0 1px #f5c451,inset 0 1px 0 rgba(255,255,255,.14)}body.dark .tag.pop{background:#f5c451;color:#0b1220}
+
+:root{--bg:#10244a;--fg:#f1f6ff;--mut:#bccbe3;--acc:#5ccbff;--card:#183564;--line:#33558f}
+body.dark{background:linear-gradient(180deg,#10244a 0%,#0d1f42 100%)}
+.nav{background:#0c1c3b}.nav nav a:not(.btn){color:#c4d3ea}.nav nav a:not(.btn):hover,.nav nav a[aria-current]{color:#ffffff}.nav .logo small{color:#c4d3ea}.nav .btn-primary{background:#5ccbff;border-color:#5ccbff}
+.hero{background:radial-gradient(1000px 480px at 78% -8%,#2f7be0,transparent),radial-gradient(700px 320px at 4% 0%,#1d4f9c,transparent)}
+.alt{background:#132b57}.band{background:linear-gradient(135deg,#1f5bb5,#143a78)}
+.foot{background:#0a1730;color:#bccbe3}.foot strong{color:#f1f6ff}.foot a{color:#bccbe3}
+.tag{background:#245098;color:#bfe6ff}input,select,textarea{background:#0f2247}.badge{background:rgba(12,28,59,.88)}
+body.dark .card,body.dark .grid li,body.dark .steps li,body.dark .tiles li,body.dark .explore a{background:linear-gradient(160deg,#24457f 0%,#183564 55%,#142d57 100%);border-color:#3a5f9f;box-shadow:0 14px 30px rgba(3,10,30,.45),inset 0 1px 0 rgba(255,255,255,.14)}
+body.dark .card.feature{background:linear-gradient(160deg,#2d62b4 0%,#1a3d78 60%,#142f61 100%)}
+.tiles li:hover{background:#2a528f}body.dark .btn-primary{background:linear-gradient(180deg,#8ae0ff,#3db8f7)}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "CRTCai", "legalName": "CRTC LLC", "areaServed": ["Mount Pleasant, SC", "Charleston, SC"], "address": {"@type": "PostalAddress", "addressLocality": "Mount Pleasant", "addressRegion": "SC", "addressCountry": "US"}, "priceRange": "$79-$3,000", "url": "https://crtcai.com", "email": "chale@cooperrivertrading.com", "telephone": "+18437548988", "description": "Cognitive Robotics & Technology Company. Websites, business automation and software products."}</script>
 </head>
 <body class="dark">
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav"><div class="wrap nav-in">
-<a class="brand" href="/"><span class="logo"><span class="wm">CRTC<b>ai</b></span><small>Build &middot; Automate &middot; Grow</small></span></a>
+<a class="brand" href="/"><img class="mono" src="/assets/monogram.svg" alt="" width="40" height="28"><span class="logo"><span class="wm">CRTC<b>ai</b></span><small>Build &middot; Automate &middot; Grow</small></span></a>
 <nav aria-label="Main"><a href="/services/">Services</a><a href="/products/">Products</a><a href="/pricing/">Pricing</a><a href="/play/">Try it</a><a href="/about/">About</a><a href="/contact/">Contact</a><a class="btn btn-primary navbtn" href="mailto:chale@cooperrivertrading.com?subject=Get%20started">Get Started</a></nav>
 </div></header>
 <main id="main">
@@ -88,11 +111,11 @@ body.light main h1 em,body.light main .kicker{color:#0b5cab}
 </main>
 <footer class="foot"><div class="wrap">
 <div class="cols">
-<div><strong>CRTCai</strong><p>Don't search harder. Let CRTC find what everyone else missed.<br>Powered by CRTC OS. A Cooper River Trading Co. business. Charleston, SC.</p></div>
+<div><strong>CRTCai</strong><p>Don't search harder. Let CRTC find what everyone else missed.<br>Powered by CRTC OS. A Cooper River Trading Co. business. Charleston, SC.<br>Owned by Ashley Hale. Founded by Chris Hale.</p></div>
 <div><strong>Company</strong><p><a href="/about/">About</a><br><a href="/services/">Services</a><br><a href="/products/">Products</a><br><a href="/how-it-works/">How it works</a><br><a href="/samples/">Samples</a><br><a href="/watch/">Watch</a><br><a href="/play/">Try it</a><br><a href="/press/">Press</a><br><a href="/pricing/">Pricing</a><br><a href="/contact/">Contact</a></p></div>
 <div><strong>Reach us</strong><p><a href="mailto:chale@cooperrivertrading.com">chale@cooperrivertrading.com</a><br><a href="tel:+18437548988">843-754-8988</a></p></div>
 <div><strong>Legal</strong><p><a href="/privacy/">Privacy</a><br><a href="/terms/">Terms</a></p></div>
 </div>
-<p class="fine">&copy; 2026 CRTCai. Powered by CRTC OS. A Cooper River Trading Co. business. CRTC LLC. Prices are in US dollars.</p>
+<p class="fine">&copy; 2026 CRTCai. Powered by CRTC OS. A Cooper River Trading Co. business. CRTC LLC. Ashley Hale, Owner. Chris Hale, Founder. Prices are in US dollars.</p>
 </div></footer>
 </body></html>

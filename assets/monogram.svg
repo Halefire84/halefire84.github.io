@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 140" role="img" aria-label="CRTCai monogram: a faceted C and R"><title>CRTCai monogram</title>
+<defs><linearGradient id="m" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f1f5f9"/><stop offset=".5" stop-color="#9fb0c8"/><stop offset="1" stop-color="#38bdf8"/></linearGradient>
+<linearGradient id="n" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2e8f0"/><stop offset="1" stop-color="#64748b"/></linearGradient></defs>
+<g fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10">
+<path d="M92 26H50L28 48V92L50 114H92" stroke="url(#m)" stroke-width="15"/>
+<path d="M108 114V26H152L174 48V64L152 86H108" stroke="url(#n)" stroke-width="15"/>
+<path d="M136 86L176 114" stroke="url(#m)" stroke-width="15"/></g>
+<path d="M92 70L116 58" stroke="#38bdf8" stroke-width="5" stroke-linecap="round"/></svg>
