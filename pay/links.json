@@ -1,14 +1,20 @@
 {
-  "starter-site": {
+  "fast-launch": {
     "url": ""
   },
-  "full-site": {
+  "ecommerce-systems": {
+    "url": ""
+  },
+  "ai-workflow": {
     "url": ""
   },
   "care-plan": {
     "url": ""
   },
-  "automation": {
+  "brain-pack": {
+    "url": ""
+  },
+  "sentinel": {
     "url": ""
   }
 }
