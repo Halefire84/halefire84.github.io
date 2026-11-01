@@ -46,7 +46,7 @@ input,select,textarea{width:100%;padding:12px;border-radius:8px;border:1px solid
 .prose{max-width:760px}.prose h2{margin-top:28px;font-size:1.25rem}
 .foot{border-top:1px solid var(--line);padding:36px 0;background:#080e1a;color:var(--mut)}
 .cols{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}.foot strong{color:var(--fg)}.foot a{color:var(--mut)}.fine{font-size:.85rem;margin-top:24px}
-.logo{display:flex;flex-direction:column;line-height:1;font-size:1.6rem;font-weight:800;letter-spacing:.02em}.logo b{color:var(--acc)}.mono{display:block;flex:none}.wm{display:block}.logo small{font-size:.62rem;font-weight:400;color:var(--mut);letter-spacing:.06em;margin-top:3px}
+.logo{display:flex;flex-direction:column;line-height:1;font-size:1.6rem;font-weight:800;letter-spacing:.02em}.logo b{color:var(--acc)}.mono{display:block;flex:none}.cards.c4,.grid.g4{grid-template-columns:repeat(auto-fit,minmax(340px,1fr))}.cards.c7>article:last-child{grid-column:1/-1}.logofloat{margin:0 0 20px}.logofloat img{display:block;width:min(520px,100%);height:auto}@media (max-width:640px){.tiles li:last-child:nth-child(odd){grid-column:1/-1}}.wm{display:block}.logo small{font-size:.62rem;font-weight:400;color:var(--mut);letter-spacing:.06em;margin-top:3px}
 .navbtn{margin:0 0 0 16px;padding:8px 16px;color:#04111f}
 .herogrid{display:grid;gap:24px;grid-template-columns:1.3fr 1fr;align-items:center}h1 em{color:var(--acc);font-style:normal}
 .lead2{font-size:1.3rem;font-weight:700;margin:0 0 8px}
@@ -82,25 +82,34 @@ body.dark .card:hover,body.dark .tiles li:hover,body.dark .explore a:hover{trans
 .form fieldset{border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:0 0 10px}.form legend{font-weight:700;padding:0 6px}.form label.opt{display:flex;gap:10px;align-items:center;font-weight:400;margin-top:6px;cursor:pointer}.form input[type=radio]{width:auto;margin:0;flex:none;accent-color:#38bdf8}
 .explore{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin:8px 0 0}.explore a{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;text-decoration:none;color:var(--fg);font-weight:700}.explore a small{display:block;font-weight:400;color:var(--mut)}.explore a:hover{border-color:var(--acc)}
 
-body::before{content:"";position:fixed;top:0;left:0;right:0;height:4px;z-index:30;background:linear-gradient(90deg,#64748b,#e2e8f0,#9fb0c8,#38bdf8);box-shadow:0 1px 8px rgba(148,163,184,.35)}
+body::before{content:"";position:fixed;top:0;left:0;right:0;height:4px;z-index:30;background:linear-gradient(90deg,#64748b,#e2e8f0,#9fb0c8,var(--acc));box-shadow:0 1px 8px rgba(148,163,184,.35)}
 .nav{border-bottom:1px solid #9fb0c8;box-shadow:0 6px 18px rgba(0,0,0,.35)}.foot{border-top:1px solid #9fb0c8;box-shadow:inset 0 8px 18px rgba(0,0,0,.35)}
 body.dark .card,body.dark .tiles li,body.dark .explore a{border-color:#2a3a57}body.dark .card:hover,body.dark .tiles li:hover,body.dark .explore a:hover{border-color:#9fb0c8}
 body.dark .card.feature{box-shadow:0 16px 40px rgba(245,196,81,.22),0 0 0 1px #f5c451,inset 0 1px 0 rgba(255,255,255,.14)}body.dark .tag.pop{background:#f5c451;color:#0b1220}
 
+:root{--bg1:#10244a;--bg2:#0d1f42;--alt:#132b57;--band1:#1f5bb5;--band2:#143a78;--c1:#24457f;--c2:#183564;--c3:#142d57;--bd:#3a5f9f;--glow1:#2f7be0;--glow2:#1d4f9c;--f1:#255399;--f2:#1a3d78;--f3:#142f61;--btn1:#8ae0ff;--btn2:#3db8f7}
+body.t-blue{--acc:#5ccbff;--bg1:#10244a;--bg2:#0d1f42;--alt:#132b57;--band1:#1f5bb5;--band2:#143a78;--c1:#24457f;--c2:#183564;--c3:#142d57;--bd:#3a5f9f;--line:#3a5f9f;--card:#183564;--glow1:#2f7be0;--glow2:#1d4f9c;--f1:#255399;--f2:#1a3d78;--f3:#142f61;--btn1:#8ae0ff;--btn2:#3db8f7}
+body.t-teal{--acc:#46d9c7;--bg1:#0e3340;--bg2:#0b2a35;--alt:#103c4a;--band1:#0c7f77;--band2:#0b5f66;--c1:#1f5666;--c2:#154353;--c3:#10384a;--bd:#2f8394;--line:#2f8394;--card:#154353;--glow1:#14b8a6;--glow2:#0e7490;--f1:#185b65;--f2:#14505e;--f3:#103f50;--btn1:#7ff0df;--btn2:#22c4b0}
+body.t-violet{--acc:#c3adff;--bg1:#221f5c;--bg2:#1b1a4d;--alt:#2a2570;--band1:#6d4fe0;--band2:#4430b0;--c1:#41399a;--c2:#2f2b78;--c3:#262366;--bd:#6458c0;--line:#6458c0;--card:#2f2b78;--glow1:#7c5cf0;--glow2:#4f3fc0;--f1:#4e40b3;--f2:#38308f;--f3:#2c2678;--btn1:#d3c2ff;--btn2:#9d80f5}
+body.t-amber{--acc:#f5c451;--bg1:#3a2d12;--bg2:#2f240e;--alt:#45351a;--band1:#b35c0c;--band2:#8a4608;--c1:#5e4818;--c2:#493812;--c3:#3d2f0f;--bd:#9a7a2a;--line:#9a7a2a;--card:#493812;--glow1:#e0a030;--glow2:#9a6a14;--f1:#684e18;--f2:#5a4414;--f3:#483610;--btn1:#ffe08a;--btn2:#eab42f}
+body.t-green{--acc:#5fe28f;--bg1:#0f3a28;--bg2:#0b2f20;--alt:#12452e;--band1:#188346;--band2:#126b3a;--c1:#1c5e3b;--c2:#175436;--c3:#12452d;--bd:#2f9560;--line:#2f9560;--card:#175436;--glow1:#22c55e;--glow2:#15803d;--f1:#1b5c3a;--f2:#17603b;--f3:#124d30;--btn1:#8ff0b4;--btn2:#33cc6b}
+body.t-rose{--acc:#fb9caf;--bg1:#46182c;--bg2:#38121f;--alt:#541e35;--band1:#cc2a58;--band2:#8f1a3d;--c1:#74304c;--c2:#5b2540;--c3:#4b1e35;--bd:#a8506f;--line:#a8506f;--card:#5b2540;--glow1:#e8456f;--glow2:#a02049;--f1:#883354;--f2:#6c2845;--f3:#571f38;--btn1:#ffc2cf;--btn2:#f56c8a}
+body.t-orange{--acc:#fdad5c;--bg1:#40200f;--bg2:#331a0b;--alt:#4d2812;--band1:#bc540c;--band2:#963f08;--c1:#6c3a18;--c2:#552d12;--c3:#45240f;--bd:#a8662c;--line:#a8662c;--card:#552d12;--glow1:#f08030;--glow2:#a8480c;--f1:#80441b;--f2:#663714;--f3:#522b10;--btn1:#ffd09a;--btn2:#f59a3c}
+body.t-indigo{--acc:#aab8fc;--bg1:#1b2563;--bg2:#151d52;--alt:#222c74;--band1:#4a55d8;--band2:#323aa8;--c1:#363f98;--c2:#2a3180;--c3:#222870;--bd:#5560c0;--line:#5560c0;--card:#2a3180;--glow1:#5b6cf0;--glow2:#3b46b8;--f1:#3c49a6;--f2:#303a94;--f3:#262e80;--btn1:#cdd5ff;--btn2:#8896f5}
 :root{--bg:#10244a;--fg:#f1f6ff;--mut:#bccbe3;--acc:#5ccbff;--card:#183564;--line:#33558f}
-body.dark{background:linear-gradient(180deg,#10244a 0%,#0d1f42 100%)}
+body.dark{background:linear-gradient(180deg,var(--bg1) 0%,var(--bg2) 100%)}
 .nav{background:#0c1c3b}.nav nav a:not(.btn){color:#c4d3ea}.nav nav a:not(.btn):hover,.nav nav a[aria-current]{color:#ffffff}.nav .logo small{color:#c4d3ea}.nav .btn-primary{background:#5ccbff;border-color:#5ccbff}
-.hero{background:radial-gradient(1000px 480px at 78% -8%,#2f7be0,transparent),radial-gradient(700px 320px at 4% 0%,#1d4f9c,transparent)}
-.alt{background:#132b57}.band{background:linear-gradient(135deg,#1f5bb5,#143a78)}
+.hero{background:radial-gradient(1000px 480px at 78% -8%,var(--glow1),transparent),radial-gradient(700px 320px at 4% 0%,var(--glow2),transparent)}
+.alt{background:var(--alt)}.band{background:linear-gradient(135deg,var(--band1),var(--band2))}
 .foot{background:#0a1730;color:#bccbe3}.foot strong{color:#f1f6ff}.foot a{color:#bccbe3}
-.tag{background:#245098;color:#bfe6ff}input,select,textarea{background:#0f2247}.badge{background:rgba(12,28,59,.88)}
-body.dark .card,body.dark .grid li,body.dark .steps li,body.dark .tiles li,body.dark .explore a{background:linear-gradient(160deg,#24457f 0%,#183564 55%,#142d57 100%);border-color:#3a5f9f;box-shadow:0 14px 30px rgba(3,10,30,.45),inset 0 1px 0 rgba(255,255,255,.14)}
-body.dark .card.feature{background:linear-gradient(160deg,#2d62b4 0%,#1a3d78 60%,#142f61 100%)}
-.tiles li:hover{background:#2a528f}body.dark .btn-primary{background:linear-gradient(180deg,#8ae0ff,#3db8f7)}
+.tag{background:var(--c1);color:#f1f6ff}input,select,textarea{background:var(--bg2)}.badge{background:rgba(12,28,59,.88)}
+body.dark .card,body.dark .grid li,body.dark .steps li,body.dark .tiles li,body.dark .explore a{background:linear-gradient(160deg,var(--c1) 0%,var(--c2) 55%,var(--c3) 100%);border-color:var(--bd);box-shadow:0 14px 30px rgba(3,10,30,.45),inset 0 1px 0 rgba(255,255,255,.14)}
+body.dark .card.feature{background:linear-gradient(160deg,var(--f1) 0%,var(--f2) 60%,var(--f3) 100%)}
+.tiles li:hover{background:var(--c1)}body.dark .btn-primary{background:linear-gradient(180deg,var(--btn1),var(--btn2))}body.dark .nav .btn-primary{background:linear-gradient(180deg,#8ae0ff,#3db8f7)}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "CRTCai", "legalName": "CRTC LLC", "areaServed": ["Mount Pleasant, SC", "Charleston, SC"], "address": {"@type": "PostalAddress", "addressLocality": "Mount Pleasant", "addressRegion": "SC", "addressCountry": "US"}, "priceRange": "$79-$3,000", "url": "https://crtcai.com", "email": "chale@cooperrivertrading.com", "telephone": "+18437548988", "description": "Cognitive Robotics & Technology Company. Websites, business automation and software products."}</script>
 </head>
-<body class="dark">
+<body class="dark t-indigo">
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav"><div class="wrap nav-in">
 <a class="brand" href="/"><img class="mono" src="/assets/monogram.svg" alt="" width="40" height="28"><span class="logo"><span class="wm">CRTC<b>ai</b></span><small>Build &middot; Automate &middot; Grow</small></span></a>
